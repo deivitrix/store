@@ -11,6 +11,11 @@ import { MenuOptionsComponent } from './componets/menu-options/menu-options.comp
 import { MenutimeComponent } from './componets/menutime/menutime.component';
 import { CategoryComponent } from './componets/category/category.component';
 import { CarroselComponentComponent } from './componets/carrosel-component/carrosel-component.component';
+import { ImagenComponentComponent } from './componets/imagen-component/imagen-component.component';
+import { MarcasComponentComponent } from './componets/marcas-component/marcas-component.component';
+import { PedidosComponentComponent } from './componets/pedidos-component/pedidos-component.component';
+import { InformacionComponentComponent } from './componets/informacion-component/informacion-component.component';
+import { FooterComponentComponent } from './componets/footer-component/footer-component.component';
 
 
 @NgModule({
@@ -23,7 +28,12 @@ import { CarroselComponentComponent } from './componets/carrosel-component/carro
     MenuOptionsComponent,
     MenutimeComponent,
     CategoryComponent,
-    CarroselComponentComponent
+    CarroselComponentComponent,
+    ImagenComponentComponent,
+    MarcasComponentComponent,
+    PedidosComponentComponent,
+    InformacionComponentComponent,
+    FooterComponentComponent
   ],
   imports: [
     CommonModule,

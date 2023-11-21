@@ -1,0 +1,20 @@
+
+<div class="flex justify-center xl:justify-between flex-wrap gap-3">
+  <div *ngFor="let imagenes of this.imagen">
+  <div >
+    <div class="w-[25rem] h-60 rounded-xl relative cursor-pointer" style="background-image: url({{imagenes.imagen}}); object-fit: none;">
+      <div class="w-full h-full font-mono">
+        <button class="bg-slate-200 text-black shadow-2xl text-lg text-center
+        rounded-lg absolute left-[30%] bottom-2 w-48 p-1">{{imagenes.nombre}}</button>
+      </div>
+    </div>
+  </div>
+
+
+
+  </div>
+</div>
+
+
+
+

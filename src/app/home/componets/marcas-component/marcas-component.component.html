@@ -1,0 +1,16 @@
+
+<div class="mb-1">
+<span class=" bg-slate-500 py-2 text-white text-lg rounded-lg px-6">MARCAS</span>
+</div>
+
+<div class="flex justify-center sm:justify-between flex-wrap md:flex-nowrap gap-3 items-center p-3 border-b-2 border-t-2">
+  <div *ngFor="let marca of this.marcas_item">
+    <div class="">
+     <img src="{{marca.imagen}}" alt="" class="w-44">
+    </div>
+
+  </div>
+</div>
+<div class="relative -mt-5 ml-[20%] sm:ml-[30%] md:ml-[40%]">
+  <button class="bg-slate-500 py-2 px-4 text-white rounded-xl shadow-2xl">VER TODAS NUESTRAS MARCAS</button>
+</div>
