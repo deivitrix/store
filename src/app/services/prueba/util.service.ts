@@ -109,4 +109,72 @@ export class UtilService {
     return marca_logo;
   }
 
+  public menu_option(){
+    const menu=[
+      {
+        nombre:"NEW",
+        color:"",
+        colorletra:""
+      },
+      {
+        nombre:"MEJORES VENTAS",
+        color:"",
+        colorletra:""
+      },
+      {
+        nombre:"DULCE",
+        color:"",
+        colorletra:""
+      },
+      {
+        nombre:"SALADO",
+        color:"",
+        colorletra:""
+      },
+      {
+        nombre:"BEBIDAS",
+        color:"",
+        colorletra:""
+      },
+      {
+        nombre:"HALLOWEEN",
+        color:"#f77e7e",
+        colorletra:"#f7f2f2"
+      },
+      {
+        nombre:"BLACK FRIDAY",
+        color:"#333131",
+        colorletra:"#f7f2f2"
+      },
+      {
+        nombre:"TRANKSGIVING",
+        color:"",
+        colorletra:""
+      },
+      {
+        nombre:"INSPIRACION",
+        color:"",
+        colorletra:""
+      },
+      {
+        nombre:"NUESTRAS BOX",
+        color:"",
+        colorletra:""
+      },
+      {
+        nombre:"OFERTAS",
+        color:"",
+        colorletra:""
+      },
+      {
+        nombre:"ASIA",
+        color:"",
+        colorletra:""
+      },
+
+    ]
+
+    return menu;
+  }
+
 }

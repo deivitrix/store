@@ -6,38 +6,15 @@
       </svg>
     </a>
   </div>
-  <div>
-    <a href="#" class="hover:bg-gray-400 sm:hover:bg-gray-700 sm:hover:text-white p-2">NEW!</a>
-  </div>
-  <div>
-    <a href="#" class="hover:bg-gray-400 sm:hover:bg-gray-700 sm:hover:text-white p-2">MEJORES VENTAS</a>
-  </div>
-  <div>
-    <a href="" class="hover:bg-gray-400 sm:hover:bg-gray-700 sm:hover:text-white p-2">DULCE</a>
-  </div>
-  <div>
-    <a href="" class="hover:bg-gray-400 sm:hover:bg-gray-700 sm:hover:text-white p-2">SALADO</a>
-  </div>
-  <div>
-    <a href="" class="hover:bg-gray-400 sm:hover:bg-gray-700 sm:hover:text-white p-2">BEBIDAS</a>
-  </div>
-  <div>
-    <a href=""  class="hover:bg-gray-400 sm:hover:bg-gray-700 sm:hover:text-white p-2"class="hover:bg-gray-400 sm:hover:bg-gray-700 sm:hover:text-white p-2">HALLOWEEN</a>
-  </div>
-  <div>
-    <a href="" class="hover:bg-gray-400 sm:hover:bg-gray-700 sm:hover:text-white p-2">TRANSKSGIVING</a>
-  </div>
-  <div>
-    <a href="" class="hover:bg-gray-400 sm:hover:bg-gray-700 sm:hover:text-white p-2">INSPIRACION</a>
-  </div>
-  <div>
-    <a href="" class="hover:bg-gray-400 sm:hover:bg-gray-700 sm:hover:text-white p-2">NUESTRAS BOX</a>
-  </div>
-  <div>
-    <a href="" class="hover:bg-gray-400 sm:hover:bg-gray-700 sm:hover:text-white p-2">ASIA</a>
+
+  <div *ngFor="let men of this.menu">
+    <ng-container *ngIf="men.color==''">
+      <a href="#" class="hover:bg-gray-400 sm:hover:bg-gray-700 sm:hover:text-white p-2 text-lg">{{men.nombre}}</a>
+    </ng-container>
+    <ng-container *ngIf="men.color!=''">
+      <a href="#" [ngStyle]="{'background-color':men.color,'color':men.colorletra}" class=" sm:hover:bg-gray-700 p-2 text-lg rounded-sm">{{men.nombre}}</a>
+    </ng-container>
+
   </div>
 
-  <div>
-    <a href="" class="hover:bg-gray-400 sm:hover:bg-gray-700 sm:hover:text-white p-2">OFERTAS</a>
-  </div>
 

@@ -38,6 +38,7 @@ import { FooterComponentComponent } from './componets/footer-component/footer-co
   imports: [
     CommonModule,
     HomeRoutingModule
-  ]
+  ],
+  exports:[NavbarComponent,MenuComponent]
 })
 export class HomeModule { }
