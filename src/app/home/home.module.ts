@@ -16,6 +16,14 @@ import { MarcasComponentComponent } from './componets/marcas-component/marcas-co
 import { PedidosComponentComponent } from './componets/pedidos-component/pedidos-component.component';
 import { InformacionComponentComponent } from './componets/informacion-component/informacion-component.component';
 import { FooterComponentComponent } from './componets/footer-component/footer-component.component';
+import { VentaspagesComponent } from './pages/ventaspages/ventaspages.component';
+import { NewPageComponent } from './pages/new-page/new-page.component';
+import { DulcePageComponent } from './pages/dulce-page/dulce-page.component';
+import { SaladoPageComponent } from './pages/salado-page/salado-page.component';
+import { BebidaPageComponent } from './pages/bebida-page/bebida-page.component';
+import { HalloweenPageComponent } from './pages/halloween-page/halloween-page.component';
+import { BlackPageComponent } from './pages/black-page/black-page.component';
+import { MenuSectionComponent } from './componets/menu-section/menu-section.component';
 
 
 @NgModule({
@@ -33,12 +41,20 @@ import { FooterComponentComponent } from './componets/footer-component/footer-co
     MarcasComponentComponent,
     PedidosComponentComponent,
     InformacionComponentComponent,
-    FooterComponentComponent
+    FooterComponentComponent,
+    VentaspagesComponent,
+    NewPageComponent,
+    DulcePageComponent,
+    SaladoPageComponent,
+    BebidaPageComponent,
+    HalloweenPageComponent,
+    BlackPageComponent,
+    MenuSectionComponent
   ],
   imports: [
     CommonModule,
     HomeRoutingModule
   ],
-  exports:[NavbarComponent,MenuComponent]
+  exports:[NavbarComponent,MenuComponent,InformacionComponentComponent]
 })
 export class HomeModule { }

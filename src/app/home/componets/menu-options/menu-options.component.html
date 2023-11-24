@@ -9,10 +9,15 @@
 
   <div *ngFor="let men of this.menu">
     <ng-container *ngIf="men.color==''">
-      <a href="#" class="hover:bg-gray-400 sm:hover:bg-gray-700 sm:hover:text-white p-2 text-lg">{{men.nombre}}</a>
+      <a href="#" routerLink="/{{men.nombrepagina}}"  class=" hover:bg-gray-400 sm:hover:bg-gray-700 sm:hover:text-white p-2 text-lg">
+
+       <span routerLinkActive="border-b-4 border-black">{{men.nombre}}</span>
+      </a>
     </ng-container>
     <ng-container *ngIf="men.color!=''">
-      <a href="#" [ngStyle]="{'background-color':men.color,'color':men.colorletra}" class=" sm:hover:bg-gray-700 p-2 text-lg rounded-sm">{{men.nombre}}</a>
+      <a href="#"  routerLink="/{{men.nombrepagina}}"  [ngStyle]="{'background-color':men.color,'color':men.colorletra}" class=" sm:hover:bg-gray-700 p-2 text-lg rounded-sm">
+        <span class="font-bold" >{{men.nombre}}</span>
+      </a>
     </ng-container>
 
   </div>
