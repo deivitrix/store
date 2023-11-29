@@ -24,6 +24,12 @@ import { BebidaPageComponent } from './pages/bebida-page/bebida-page.component';
 import { HalloweenPageComponent } from './pages/halloween-page/halloween-page.component';
 import { BlackPageComponent } from './pages/black-page/black-page.component';
 import { MenuSectionComponent } from './componets/menu-section/menu-section.component';
+import { CardProductComponent } from './componets/card-product/card-product.component';
+import { FormsModule } from '@angular/forms';
+import { ProductoDetalleComponent } from './pages/producto-detalle/producto-detalle.component';
+import { CardProductoDetalleComponent } from './componets/card-producto-detalle/card-producto-detalle.component';
+import { ProductRelacionComponent } from './componets/product-relacion/product-relacion.component';
+import { PageProductDetalleComponent } from './componets/page-product-detalle/page-product-detalle.component';
 
 
 @NgModule({
@@ -49,11 +55,17 @@ import { MenuSectionComponent } from './componets/menu-section/menu-section.comp
     BebidaPageComponent,
     HalloweenPageComponent,
     BlackPageComponent,
-    MenuSectionComponent
+    MenuSectionComponent,
+    CardProductComponent,
+    ProductoDetalleComponent,
+    CardProductoDetalleComponent,
+    ProductRelacionComponent,
+    PageProductDetalleComponent
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    FormsModule
   ],
   exports:[NavbarComponent,MenuComponent,InformacionComponentComponent]
 })

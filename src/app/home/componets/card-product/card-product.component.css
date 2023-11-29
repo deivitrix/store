@@ -1,0 +1,18 @@
+
+
+ /* hover para el card */
+ #aparecer{
+ display: none;
+ }
+
+ #desaparecer{
+  display: block;
+ }
+
+ #contenedor:hover #aparecer{
+  display: block;
+ }
+
+ #contenedor:hover #desaparecer{
+ display: none;
+ }

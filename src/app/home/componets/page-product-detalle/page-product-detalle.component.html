@@ -1,0 +1,48 @@
+<div class="w-full">
+  <div class="container">
+    <ul  class="flex gap-3 text-[0.8rem]">
+      <li class="w-12">
+        <div class="w-full flex justify-between cursor-pointer">
+          <span class="text-red-500  hover:border-b-2 hover:border-red-500" routerLink="/home">Inicio</span>
+          <span>></span>
+        </div>
+      </li>
+      <li class="w-12">
+        <div class="w-full flex justify-between cursor-pointer">
+          <span class="text-red-500  hover:border-b-2 hover:border-red-500" routerLink="/new">New</span>
+          <span>></span>
+        </div>
+      </li>
+      <li class="">
+          <span>{{texto}}</span>
+      </li>
+
+    </ul>
+  </div>
+
+
+  <div class="container">
+    <app-card-producto-detalle [prod]="prod"></app-card-producto-detalle>
+  </div>
+  <div class="container">
+    <div class="flex flex-col mt-8 w-full">
+      <app-product-relacion [prod]="relacion" [title]="title" ></app-product-relacion>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="flex flex-col mt-8 w-full">
+      <app-product-relacion [prod]="relacion1" [title]="title1" ></app-product-relacion>
+    </div>
+  </div>
+
+  <div class=" bg-red-500 mt-10 mb-3">
+    <app-informacion-component></app-informacion-component>
+    </div>
+
+    <footer class="bg-gray-700 text-white w-full">
+      <div class="container">
+        <app-footer-component></app-footer-component>
+      </div>
+    </footer>
+</div>

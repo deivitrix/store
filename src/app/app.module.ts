@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RecargarDirective } from './directive/recargar.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RecargarDirective
   ],
   imports: [
     BrowserModule,

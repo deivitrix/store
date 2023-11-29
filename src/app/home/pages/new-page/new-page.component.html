@@ -2,7 +2,7 @@
   <ul class="flex gap-3 text-[0.8rem]">
     <li class="w-12">
       <div class="w-full flex justify-between cursor-pointer">
-        <span class="text-red-500  hover:border-b-2 hover:border-red-500" routerLink="/home">Inicio</span>
+        <a href="" class="text-red-500  hover:border-b-2 hover:border-red-500">Inicio </a>
         <span>></span>
       </div>
     </li>
@@ -16,6 +16,8 @@
 </div>
 
 <div class="w-full block md:flex gap-10">
+
+  <!-- ordena por -->
 <div class="md:w-[20.8333333%] lg:[22rem] hidden md:block">
 <div class="bg-slate-700 text-white p-2 font-bold text-lg">Filtrar por</div>
 <div class="p-2 w-full border-b-2">
@@ -116,48 +118,7 @@
   </div>
   <!-- producto -->
 <div class="w-[100%] md:w-[79.166667%] lg:w-[calc(100%-25rem)] mb-5 ">
-
-<div class="flex flex-wrap justify-center md:justify-start gap-4 ">
-  <div *ngFor="let prod of this.prod">
-
-      <div class="w-64 h-[23rem] relative hover:border hover:border-black hover:rounded-lg hover:shadow-md">
-        <div class="w-full">
-          <div class="text-center">
-            <span class="bg-blue-400 text-white">¡Nuevos Productos!</span>
-          </div>
-          <div class="flex justify-center mt-1">
-            <img src="{{prod.imagen}}" alt="" class="w-40 h-40">
-            <div class="absolute top-6 left-7">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-              </svg>
-
-            </div>
-
-          </div>
-          <div class="text-center text-base mt-2 font-bold">
-            {{prod.producto}}
-          </div>
-          <div class="text-base text-center mt-2">
-            <span>{{prod.densidad}}</span>
-          </div>
-          <div class="text-base text-center mt-2 font-bold">
-            <span>{{prod.precio}}</span>
-          </div>
-          <div class="w-full text-center">
-            <button class=" mt-3 bg-transparent hover:bg-red-400 text-red-500 font-semibold hover:text-white py-2 px-4 border border-red-400 hover:border-transparent rounded">
-              COMPRA RAPIDA
-            </button>
-          </div>
-
-        </div>
-      </div>
-
-  </div>
-</div>
-<div class="flex justify-center mt-6">
-1
-</div>
+  <app-card-product [prod]="prod"></app-card-product>
 </div>
 
 </div>

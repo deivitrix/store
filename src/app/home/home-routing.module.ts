@@ -9,6 +9,7 @@ import { SaladoPageComponent } from './pages/salado-page/salado-page.component';
 import { BebidaPageComponent } from './pages/bebida-page/bebida-page.component';
 import { HalloweenPageComponent } from './pages/halloween-page/halloween-page.component';
 import { BlackPageComponent } from './pages/black-page/black-page.component';
+import { ProductoDetalleComponent } from './pages/producto-detalle/producto-detalle.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
       {
         path:'new',
         component:NewPageComponent
+      },
+      {
+        path:'productoDetalle/:producto/:id',
+        component:ProductoDetalleComponent
       },
       {
         path:'ventas',

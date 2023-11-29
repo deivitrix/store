@@ -1,0 +1,21 @@
+
+<div class="w-full relative text-center mb-10 block">
+  <div class="absolute w-full h-[0.1rem] top-[50%] bg-slate-950"></div>
+ <strong class=" inline-block relative z-20 bg-white text-lg" style="padding: 0.4rem 2rem;">
+  <span class="relative text-gray-700 ">{{this.title}}</span>
+ </strong>
+</div>
+
+<div class="flex flex-wrap justify-center sm:justify-start w-full gap-6">
+  <div *ngFor="let rela of this.prod" >
+    <div (click)="this.detalleprod(rela)" class="w-44 md:w-60 h-full py-5 lg:w-[14rem] px-5 flex flex-col hover:border hover:border-gray-800 hover:rounded-2xl cursor-pointer">
+      <div class="w-full flex justify-center ">
+        <img src="{{rela.imagen}}" class="md:w-34 md:h-34" alt="">
+      </div>
+      <div class="w-full text-center mt-4">
+        <span>{{rela.producto}}</span>
+      </div>
+    </div>
+
+  </div>
+</div>
