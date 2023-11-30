@@ -1,6 +1,6 @@
 
 <div class="flex flex-wrap justify-center md:justify-start gap-6 ">
-  <div *ngFor="let prod of this.prod; let i=index">
+  <div *ngFor="let prod of this.prod | pagination :pageSizeW :pageNumberW; let i=index ">
 
     <div id="contenedor" class=" w-64 h-[24.5rem] relative hover:border hover:border-black hover:rounded-lg hover:shadow-md">
       <div class="w-full">
@@ -97,8 +97,15 @@
     </div>
 
   </div>
+  <div class="flex justify-center w-full">
+    <mat-paginator class="bg-white" style=" background: #dddbdb;" [length]="prod.length"
+    [pageSize]="pageSizeW"
+    aria-label="Select page"
+    (page)="handlePageW($event)">
+  </mat-paginator>
+  </div>
 </div>
-<div>1</div>
+
 <!-- <div (mouseenter) ="mouseEnter('div a') "  (mouseleave) ="mouseLeave('div A')">
   <h2>Div A</h2>
 </div>

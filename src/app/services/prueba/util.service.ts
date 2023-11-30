@@ -390,6 +390,71 @@ export class UtilService {
         ingredientes:"Agua gaseosa, regulador de acidez E330, zumo concentrado de fresa, aroma, edulcorantes E950-E955, zanahoria (colorante).",
         declaracion:"(para 100ml): valor energético 0Kcal, grasas 0g (de las cuales saturadas 0g), hidratos de carbono 0g (de los cuales azúcares 0g), proteínas 0g, sal 0g."
       },
+      {
+        producto:"Libby's Pumpkin Relleno De Calabaza",
+        densidad:"425g / 15oz",
+        precio:"6,09",
+        imagen: '../assets/img/libbys-pumpkin-pie-filling-1--pure-425g-15oz-1.webp',
+        stock:10,
+        marca:"Libby's",
+        fecha:"31/04/25",
+        contador:1,
+        resenia:"La tarta de calabaza a la americana es un gran clásico de la repostería estadounidense y sobre todo un delicioso manjar típico de las fiestas familiares como el día de Acción de Gracias o Navidad. Con este puré de calabaza de Libbys podrás preparar un pastel de calabaza sin apenas esfuerzo. Además este relleno para tarta está hecho 100% de pura calabaza, conservando su alto contenido en vitamina C y E, y potasio ¡Prepara un delicioso Pumpkin Pie con el relleno favorito de Estados Unidos, Libby's!",
+        ingredientes:"Calabaza (100%).",
+        declaracion:"(para 100ml): valor energético 41Kcal, grasas 0.4g (de las cuales saturadas 0g), hidratos de carbono 8.2g (de los cuales azúcares 4.1g), proteínas 0.8g, sal 0g."
+      },
+      {
+        producto:"General Mills Cereales Reese's Puffs",
+        densidad:"326g / 11.5oz",
+        precio:"2.06",
+        imagen: '../assets/img/general-mills-reeses-puffs-326g-11.5oz-1.webp',
+        stock:10,
+        marca:"Reese's",
+        fecha:"31/04/25",
+        contador:1,
+        resenia:"Las Reese's son la combinación perfecta de chocolate y crema de cacahuete. ¿Los cocías verdad? Pues ahora por fin las tienes en forma de cereales. Y todo Gracias a General Mills que te trae estos deliciosos cereales americanos Reese's Puffs para empezar el día disfrutando el sabor de tus chocolatinas preferidas. Todo un clásico en los desayunos de Estados",
+        ingredientes:"maíz** a semillas enteras, azúcar, mantequilla de cacahuetes (cacahuetes, azúcar, emulsionante E471, aceite de cacahuetes, sal, melaza, almidón de maíz**, dextrosa, sémola de maíz**, sirope de maíz**, aceites de colza** y/o de girasol, sal, cacao, colorante E150c, estabilizante E339iii, aromas naturales y artificiales, antioxidante E307 (vitamina E) añadido para para preservar el frescor. Vitaminas y minerales : Fosfato tricálcico, Carbonato de calcio, zinc y hierro (minerales), vitamina C, vitamina B3, vitamina B6, vitamina B2, vitamina B1, vitamina A, vitamina B9, vitamina B12, vitamina D3 **Prodotto a partire da OGM.",
+        declaracion:"(para 100ml): valor energético 414Kcal, grasas 10.3g (de las cuales saturadas 1.7g), hidratos de carbono 75.9g (de los cuales azúcares 34.5g), proteínas 6.9g, sal 1.4g."
+      },
+      {
+        producto:"Harry Potter Autobús Noctámbulo Caja De Caramelos",
+        densidad:"112g / 3.95oz",
+        precio:"24.40",
+        imagen: '../assets/img/harry-potter-knight-bus-tin-112g-3.95oz-2.webp',
+        stock:10,
+        marca:"Jelly Belly",
+        fecha:"31/04/25",
+        contador:1,
+        resenia:"Esta es una caja de caramelos que va a poner celoso a más de uno en tu próxima fiesta Harry Potter: ¡un Autobús Noctámbulo lleno de caramelos de gelatina! Dentro encontrarás cinco caramelos de diferentes formas, colores y gustos: una botella de poción, Hedwige, el Sombrero Seleccionador, la cicatriz en forma de rayo y el símbolo de las Reliquias de la Muerte. Demasiado yummy... br/>Una vez acabados los caramelos, ¡el autobús morado de tres plantas se convierte en hucha! ¡Una caja de caramelos Harry Potter ideal si quieres complacer a un fan de la saga de JK Rowling!",
+        ingredientes:"Azúcar, sirope de glucosa, almidón de patatas modificado, agua, reguladores de acidez E296-E330, antioxidante E325, aromas, concentrado de frutas y legumbres (zanahoria, espirulina, manzana, grosella negra, calabaza), glaseado (agente de glaseado E903, aceite de colza, aceite de nuez de coco), colorante E100.",
+        declaracion:"(para 100ml): valor energético 340Kcal, grasas 0g (de las cuales saturadas 0g), hidratos de carbono 85g (de los cuales azúcares 60g), proteínas 0g, sal 0.4g."
+      },
+      {
+        producto:"Harry Potter Casas De Hogwarts Caja De Caramelos",
+        densidad:"28g / 1oz",
+        precio:"7.99",
+        imagen: '../assets/img/harry-potter-houses-of-hogwarts-crests-candy-tin-28g-1oz-1.webp',
+        stock:10,
+        marca:"Jelly Belly",
+        fecha:"31/04/25",
+        contador:1,
+        resenia:"My American Market asume el papel de sombrero seleccionador y te informa en qué Casa de Hogwarts vas a estudiar gracias a estas cajas de caramelos Jelly Belly Beans con la imagen de las Casas de la famosa escuela de magia. Estos blasones metálicos contienen deliciosos caramelos americanos Jelly Belly: Gryffindor contiene caramelos de cereza, los de Ravenclaw tienen sabor a arándano, Hufflepuff de limón y Slytherin de manzana verde. Caja de caramelos vendida por unidad y de manera aleatoria.",
+        ingredientes:"Azúcar, sirope de glucosa, almidón de maíz modificado, zumo concentrado de manzana, regulador de acidez E330, agentes de glaseado E901-E903-E904, espirulina, aroma, colorantes E100, puré de arándanos, espirulina, aroma, puré de limón, concentrado de frutas y legumbres (manzana, calabaza, grosella negra, zanahoria), zumo concentrado de cereza.",
+        declaracion:"(para 100ml): valor energético 364Kcal, grasas 0g (de las cuales saturadas 0g), hidratos de carbono 91g (de los cuales azúcares 61g), proteínas 0g, sal 0g."
+      },
+      {
+        producto:"Eggnog Tradicional Ponche De Crema",
+        densidad:"1L / 34 fl oz",
+        precio:"1.89",
+        imagen: '../assets/img/traditional-eggnog-1l-34-fl-oz-1.webp',
+        stock:10,
+        marca:"Candy Can",
+        fecha:"31/04/25",
+        contador:1,
+        resenia:"El Egg Nog es una tradición en las fiestas de Fin de año. Por suerte, Luxlait está aquí para mantener vivas nuestras tradiciones. Está aromatizado con vainilla y extracto de ron (pero don’t worry, es una bebida sin alcohol). ¡El ponche puede degustarse frío y en cualquier momento del día!",
+        ingredientes:"Leche semidesnatada, crema (leche), azúcar, aromas naturales, fibra (psyllium), almidón modificado, estabilizantes E466-E418, colorante E160a, sal.",
+        declaracion:"(para 100ml): valor energético 104Kcal, grasas 4g (de las cuales saturadas 2.8g), hidratos de carbono 13.6g (de los cuales azúcares 12.4g), proteínas 3.2g, sal 0.2g."
+      },
 
 
 

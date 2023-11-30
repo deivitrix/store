@@ -21,6 +21,7 @@ export class PageProductDetalleComponent implements OnInit {
 
   constructor(private _utilservice:UtilService,private rutaActiva: ActivatedRoute,){
     // this.texto=rutaActiva.snapshot.params['producto'];
+    // console.log(this.id);
 
   }
 

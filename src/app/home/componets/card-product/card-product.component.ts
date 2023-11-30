@@ -1,16 +1,19 @@
 import { Subscription } from 'rxjs';
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import {Router} from '@angular/router';
 import { UtilService } from 'src/app/services/prueba/util.service';
+import { MatPaginator, PageEvent } from '@angular/material/paginator';
 
 @Component({
   selector: 'app-card-product',
   templateUrl: './card-product.component.html',
   styleUrls: ['./card-product.component.css']
 })
-export class CardProductComponent {
-
+export class CardProductComponent implements OnInit{
+@ViewChild(MatPaginator,{static:true}) paginator!:MatPaginator;
 @Input () prod:any[];
+public pageSizeW: number = 9;
+  public pageNumberW: number = 1;
 
 
 // mouseEnter(div : string){
@@ -23,7 +26,11 @@ export class CardProductComponent {
 
 constructor(private router:Router, private _utiservice:UtilService){
   this.prod=[];
+
 }
+  ngOnInit(): void {
+    this.paginator._intl.itemsPerPageLabel="Elementos -";
+  }
 
 incrementar(indice:any)
 {
@@ -49,6 +56,11 @@ descender(indice:any)
 productoDetalle(prod:any)
 {
  this.router.navigateByUrl('productoDetalle/'+prod+'/0');
+}
+
+handlePageW(e: PageEvent){
+  this.pageSizeW = e.pageSize;
+  this.pageNumberW = e.pageIndex + 1;
 }
 
 }

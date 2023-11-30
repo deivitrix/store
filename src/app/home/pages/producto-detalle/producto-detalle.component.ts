@@ -11,9 +11,11 @@ import { ActivatedRoute } from '@angular/router';
 export class ProductoDetalleComponent implements OnInit, OnChanges {
 
   texto="";
+  id='';
 
   constructor(private rutaActiva: ActivatedRoute,){
     this.texto=rutaActiva.snapshot.params['producto'];
+    this.id=rutaActiva.snapshot.params['id'];
   }
   ngOnChanges(changes: SimpleChanges): void {
 

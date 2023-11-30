@@ -31,6 +31,10 @@ import { CardProductoDetalleComponent } from './componets/card-producto-detalle/
 import { ProductRelacionComponent } from './componets/product-relacion/product-relacion.component';
 import { PageProductDetalleComponent } from './componets/page-product-detalle/page-product-detalle.component';
 
+//paginador
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { PipesModule } from '../pipes/pipes.module';
+
 
 @NgModule({
   declarations: [
@@ -65,7 +69,10 @@ import { PageProductDetalleComponent } from './componets/page-product-detalle/pa
   imports: [
     CommonModule,
     HomeRoutingModule,
-    FormsModule
+    FormsModule,
+    MatPaginatorModule,
+    PipesModule
+
   ],
   exports:[NavbarComponent,MenuComponent,InformacionComponentComponent]
 })

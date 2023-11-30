@@ -16,7 +16,6 @@
 </div>
 
 <div class="w-full block md:flex gap-10">
-
   <!-- ordena por -->
 <div class="md:w-[20.8333333%] lg:[22rem] hidden md:block">
 <div class="bg-slate-700 text-white p-2 font-bold text-lg">Filtrar por</div>
@@ -120,11 +119,15 @@
 <div class="w-[100%] md:w-[79.166667%] lg:w-[calc(100%-25rem)] mb-5 ">
   <app-card-product [prod]="prod"></app-card-product>
 </div>
-
+</div>
 </div>
 
+<div class=" bg-red-500 mt-10 mb-3 w-full">
+  <app-informacion-component></app-informacion-component>
+  </div>
 
-
-
-
-</div>
+  <footer class="bg-gray-700 text-white w-full">
+    <div class="container">
+      <app-footer-component></app-footer-component>
+    </div>
+  </footer>

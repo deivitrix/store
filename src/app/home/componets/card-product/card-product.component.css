@@ -16,3 +16,7 @@
  #contenedor:hover #desaparecer{
  display: none;
  }
+
+ mat-paginator {
+  background-color: transparent !important;
+}
