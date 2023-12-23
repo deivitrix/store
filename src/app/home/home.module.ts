@@ -25,7 +25,7 @@ import { HalloweenPageComponent } from './pages/halloween-page/halloween-page.co
 import { BlackPageComponent } from './pages/black-page/black-page.component';
 import { MenuSectionComponent } from './componets/menu-section/menu-section.component';
 import { CardProductComponent } from './componets/card-product/card-product.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductoDetalleComponent } from './pages/producto-detalle/producto-detalle.component';
 import { CardProductoDetalleComponent } from './componets/card-producto-detalle/card-producto-detalle.component';
 import { ProductRelacionComponent } from './componets/product-relacion/product-relacion.component';
@@ -71,7 +71,8 @@ import { PipesModule } from '../pipes/pipes.module';
     HomeRoutingModule,
     FormsModule,
     MatPaginatorModule,
-    PipesModule
+    PipesModule,
+    ReactiveFormsModule
 
   ],
   exports:[NavbarComponent,MenuComponent,InformacionComponentComponent]
